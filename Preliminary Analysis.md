@@ -6,3 +6,8 @@ I will be putting code here that will help me streamline the QC of my samples an
 Putting this as a to-do list for myself, but: 
 1.) I need to detail the methods for how I created the genome libraries for this initial batch of resequencing and how they were sequenced. 
 
+Here is a neat little figure from the CD Genomics website (https://bioinfo.cd-genomics.com/whole-genome-resequencing-analysis.html): 
+![Whole-Genome-Resequencing-Analysis-picture-3](https://github.com/user-attachments/assets/2474b351-d0c0-4924-8453-c702489a23af)
+
+This should thus be the data analysis workflow I am aiming to replicate. :) 
+
