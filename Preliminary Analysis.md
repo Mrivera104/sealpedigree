@@ -54,6 +54,7 @@ I used fastp to go through and clean up/trim my fastq files. I used the default 
         
 Here is an example of the results: 
 
-![Screenshot 2024-12-19 140928](https://github.com/user-attachments/assets/fc91d582-d866-4bdf-b2b7-37c9441430fb)
+![image](https://github.com/user-attachments/assets/60af2702-274c-4386-89f4-c2d5f3a24ec8)
+
 
 
