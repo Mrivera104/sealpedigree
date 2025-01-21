@@ -4,6 +4,8 @@ I will be performing a genome alignment using the batch 1 resequenced eseal indi
 
 For this alignment, I am using the BWA MEM aligner to align each forward and reverse fastq file to the reference genome. Here, I am using hap1 (primary) of the CCGP reference genome. 
 
+# STEP 1: Alignment and BAM files
+
 The first step in BWA MEM alignment is to ensure that the reference fasta is indexed. This alignment process outputs a sam (sequence alignment/map format) file first, then converts that into a bam file. SAM files are typically converted to BAM (binary) files because they save storage space and are easier to manipulate. 
 
 The BAM file then needs to be sorted. This step uses information from the reference genome to add chromosome/scaffold information. After sorting, the BAM file is indexed for easy lookup and organization. 
@@ -17,3 +19,10 @@ I went ahead and ran the bam files through MultiQC to do a quality check on them
 I also had ChatGPT create a bash script for me to do this manually. 
 
     bash bam_check.sh
+
+# STEP 2: Mark Duplicates using GATK
+
+The next step is to mark duplpicates in each BAM file using GATK. This is what the SMSC class has to say about the duplicat marking step: 
+
+"Potential PCR duplicates need to be marked. Marking duplicates make sense even if you used a PCR-free library preparation procedure because reads identified as duplicates are not removed and can be included in the subsequent analyses if needed." 
+
