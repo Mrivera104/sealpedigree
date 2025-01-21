@@ -12,4 +12,8 @@ The bash script is named and ran as the following:
 
     bash align_fastq.sh
 
-I went ahead and ran some scripts to quality check my bam files. The bash script I used chatGPT to help me create runs flagstat to output alignment summary 
+I went ahead and ran the bam files through MultiQC to do a quality check on them (https://seqera.io/multiqc/). My results are here: file:///C:/Users/Millie/Downloads/multiqc_report.html
+
+I also had ChatGPT create a bash script for me to do this manually. 
+
+    bash bam_check.sh
